@@ -21,6 +21,9 @@ $ionicons-font-path: "../../vendor/ionic/fonts" !default;
 // Include all of Ionic
 @import "../../vendor/ionic/scss/ionic";
 
+// Include famous-angular
+@import "../../vendor/famous-angular/dist/famous-angular.css";
+
 // Include custom
 @import "variables";
 @import "mixins";

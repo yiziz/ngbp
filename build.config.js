@@ -70,12 +70,15 @@ module.exports = {
       'vendor/ionic/js/ionic.min.js',
       //'vendor/ionic/js/ionic.bundle.min.js',
       'vendor/ionic/js/ionic-angular.min.js',
-      // remove
-      'vendor/ionic/js/ionic.bundle.js'
+      // not minified
+      'vendor/ionic/js/ionic.bundle.js',
+      'vendor/famous/dist/famous-global.js',
+      'vendor/famous-angular/dist/famous-angular.js'
     ],
     css: [
-      // should be combined with sass files
+      // should be imported into main.scss file
       //'vendor/ionic/**/*.min.css'
+      //'vendor/famous-angular/dist/famous-angular.css'
     ],
     assets: [
       'vendor/ionic/fonts/*'

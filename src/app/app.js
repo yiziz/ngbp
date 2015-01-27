@@ -68,6 +68,7 @@ angular.module('starter', [
   // core
   // third parties
   'ionic',
+  'famous.angular',
   'templates-app',
   //'templates-common',
   // user
