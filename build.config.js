@@ -8,7 +8,7 @@ module.exports = {
    * completely built.
    */
   build_dir: 'build',
-  compile_dir: 'bin',
+  prod_dir: 'www',
 
   /**
    * This is a collection of file patterns that refer to our app code (the
@@ -30,7 +30,8 @@ module.exports = {
     ctpl: [ 'src/common/**/*.tpl.html' ],
 
     html: [ 'src/index.html' ],
-    less: 'src/less/main.less'
+    less: 'src/less/main.less',
+    scss: 'src/scss/main.scss'
   },
 
   /**
@@ -63,13 +64,21 @@ module.exports = {
   vendor_files: {
     js: [
       'vendor/angular/angular.js',
-      'vendor/placeholders/angular-placeholders-0.0.1-SNAPSHOT.min.js',
-      'vendor/angular-ui-router/release/angular-ui-router.js',
-      'vendor/angular-ui-utils/modules/route/route.js'
+      'vendor/angular-animate/*.min.js',
+      'vendor/angular-sanitize/*.min.js',
+      'vendor/angular-ui-router/release/*.min.js',
+      'vendor/ionic/js/ionic.min.js',
+      //'vendor/ionic/js/ionic.bundle.min.js',
+      'vendor/ionic/js/ionic-angular.min.js',
+      // remove
+      'vendor/ionic/js/ionic.bundle.js'
     ],
     css: [
+      // should be combined with sass files
+      //'vendor/ionic/**/*.min.css'
     ],
     assets: [
+      'vendor/ionic/fonts/*'
     ]
   },
 };
