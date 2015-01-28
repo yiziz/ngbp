@@ -78,7 +78,7 @@ module.exports = {
     css: [
       // should be imported into main.scss file
       //'vendor/ionic/**/*.min.css'
-      //'vendor/famous-angular/dist/famous-angular.css'
+      'vendor/famous-angular/dist/famous-angular.css'
     ],
     assets: [
       'vendor/ionic/fonts/*'
