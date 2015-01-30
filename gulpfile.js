@@ -25,6 +25,7 @@ var
   rev                     = require('gulp-rev'),
   runSequence             = require('run-sequence'),
   sass                    = require('gulp-sass'),
+  shell                   = require('gulp-shell'),
   streamqueue             = require('streamqueue'),
   stylish                 = require('jshint-stylish'),
   svgstore                = require('gulp-svgstore'),
@@ -78,6 +79,10 @@ gulp.task('prod', function(callback){
     'inject:prod',
   callback);
 });
+
+gulp.task('upload', ['prod'], shell.task([
+  'ionic upload'
+]));
 
 gulp.task('inject:prod', function () {
 
